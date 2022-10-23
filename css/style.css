@@ -1,11 +1,8 @@
 :root {
     --color-black: black;
     --color-white: #fff;
-    --color-gold: black;
-    --color-blue: rgb(0, 0, 0);
-    --color-blue-hover: rgb(0, 89, 255);
     --color-bg: #faf4f0;
-
+    --color-peach: #DE7E5D;
 }
 
 body {
@@ -36,7 +33,7 @@ h4,
 h5 {
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1;
 }
 
@@ -83,7 +80,7 @@ h1 {
 }
 
 .header {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     border-bottom: 3px solid var(--color-black);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,18 +95,17 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px
 }
 
 .header-chat {
     grid-area: chat;
-    background-color: var(--color-blue);
+    background-color: var(--color-peach);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2px;
-    text-decoration: none;
     gap: 0.6rem;
+    font-size: larger;
 }
 
 .header-menu {
@@ -144,12 +140,11 @@ h1 {
 }
 
 @media (min-width: 768px) {
-
     .hero,
     .container {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 2.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.5rem;
     }
 }
 
@@ -160,8 +155,7 @@ h1 {
 }
 
 .hero-about-heading,
-.hero-about-sub,
-p {
+.hero-about-sub, p {
     padding-left: 1.5rem;
 }
 
@@ -173,5 +167,15 @@ footer {
     text-align: justify;
     color: var(--color-black);
     word-spacing: 2rem;
+    color: #fff;
+}
+
+a:link {
     text-decoration: none;
+    color: var(--color-black);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--color-black);
 }
