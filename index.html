@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tyler Waltons Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler Waltons Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <h1 class="offscreen"> Tyler Walton's Portfolio</h1>
+  <body>
+    <h1 class="offscreen">Tyler Walton's Portfolio</h1>
 
     <header class="header">
-
-    <a href="/" class="header-logo">
-        <img src="img/logo 2.png" width="137" height="15">
-    </a>
-    <a href="conatact" class="header-chat">
-      Lets Chat!
-    </a>
-    <nav class="header-menu">
-        <h1 class="offscreen"> Navigation</h1>
-        <ul>
-            <li>
-                <a href="/" aria-current="page" class="active"> Home</a>
-            </li>
-            <li>
-                <a href="about.html"> About</a>
-            </li>
-            <li>
-                <a href="contact.html"> Contact</a>
-            </li>
+      <a href="#" class="header-logo">
+        <img src="img\logo 2.png" width="137" height="15" />
+      </a>
+      <a href="#contact" class="header-chat"> Contact Me! </a>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li>
+            <a href="#" aria-current="page" class="active"> Home</a>
+          </li>
         </ul>
-    </nav>
-   
-
-
+      </nav>
     </header>
-    
-</body>
+    <section class="hero">
+      <div class="container">
+        <picture class="hero-image">
+          <source
+            srcset="img\coding-sm.jpg" width="360" height="220" media="(max-width: 400px)"
+            type="image/jpg"/>
+          <source
+            srcset="img\coding-md.jpg" width="608" height="372" media="(max-width: 768px)"
+            type="image/jpg"/>
+          <img
+            src="./img/coding.jpg" width="830" height="530" alt="someone coding on a computer"/>
+        </picture>
+      </div>
+      <div class="hero-col">
+        <div class="hero-about"> <a href="about"></a>
+          <h2 class="hero-about-sub">HI! I'm Tyler Walton.</h2>
+          <h1 class="hero-about-heading">
+            Delveloper. <br />
+            Programmer.
+          </h1>
+          <p>
+            I am an up and coming coder out of Wilmington, NC. I wish to help
+            any brand, organisation and entrepreneur create the website of thier
+            dreams. If you would like to add a hard working, self motivated team
+            player to your staff then please hit the "Contact Me!" tab or see my
+            information below.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+            <address> 
+            <a href="tylerwalton300@gmail.com" id="contact" class="E-mail"> tylerwalton300@gmail.com</a>
+            <a href="https://github.com/tylerwalton">Git Hub</a>
+            <a href="Cell: (910) 750-1568"> Cell Phone: (910) 750-1568</a>
+            </address>
+    </footer>
 
+  </body>
 </html>

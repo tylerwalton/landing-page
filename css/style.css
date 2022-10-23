@@ -78,19 +78,14 @@ a:hover {
 }
 
 .offscreen {
-        position: absolute;
-        clip: rect(1px, 1px, 1px, 1px);
-        clip: rect(1px, 1px, 1px, 1px,);
-        padding:0;
-        border: 0;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-}
-
-img {
-    max-width: 200px;
-    height: 100px;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px,);
+    padding:0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .header {
@@ -119,6 +114,7 @@ img {
     justify-content: center;
     padding: 2px;
     text-decoration: none;
+    gap: 0.6rem;
 }
 
 .header-chat:hover {
@@ -127,12 +123,47 @@ img {
 
 .header-menu {
     grid-area: menu;
+    border-top: 3px solid var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu-list {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    gap: 1.2rem;
+    padding: 0 0.7rem;
 }
 
 @media(min-width: 768px) {
     .header {
     grid-template-columns: 180px 1fr 180px;
-    grid-template-areas:
-    "logo menu chat";
+    grid-template-areas: "logo menu chat";
     }
+}
+
+.hero {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom:  2px solid var(--color-black);
+}
+
+@media (min-width: 768px) {
+.hero , .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.5rem;
+}
+}
+.hero-col {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-about-heading, .hero-about-sub, p {
+    padding-left: 1.5rem;
 }
