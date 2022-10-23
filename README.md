@@ -4,7 +4,7 @@ Another was to allow us to refine our skills in web developement by using HTML a
 Lastly making sure that we had a responsive layout that adpated to the users viewport.
 
 ## Deployed Webpage
-If you would like to take a look at my completed web page here is a [link!] (https://tylerwalton.github.io/landing-page/)
+[Click me to go to my deployed webpage!](https://tylerwalton.github.io/landing-page/)
 
 ## <u> **Motivation** </u>
 
