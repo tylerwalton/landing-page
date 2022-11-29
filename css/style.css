@@ -5,6 +5,16 @@
     --color-peach: #DE7E5D;
 }
 
+.projects {
+    grid-area: menu;
+    border: 3px solid var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 200px;
+}
+
 body {
     font-weight: bold;
     font-family: sans-serif, Arial, Helvetica;
